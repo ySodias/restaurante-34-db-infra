@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 provider "aws" {
-  region = var.region
+  region     = var.region
   access_key = var.access_key
   secret_key = var.secret_key
 }
@@ -16,7 +16,7 @@ resource "aws_db_subnet_group" "subnet_group" {
 }
 
 resource "aws_security_group" "security_group" {
-  name   = "security_group""
+  name   = "security_group"
   vpc_id = var.vpc_id
 
   ingress {
