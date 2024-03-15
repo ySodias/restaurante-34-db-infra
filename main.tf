@@ -38,7 +38,7 @@ resource "aws_security_group" "security_group" {
   }
 }
 
-resource "aws_db_parameter_group" "restaurant-34" {
+resource "aws_db_parameter_group" "db_parameter_group" {
   name   = "restaurant-34"
   family = "postgres11"
 
@@ -48,7 +48,7 @@ resource "aws_db_parameter_group" "restaurant-34" {
   }
 }
 
-resource "aws_db_instance" "restaurant-34" {
+resource "aws_db_instance" "db_instance" {
   identifier             = "restaurant-34"
   instance_class         = "db.t3.micro"
   allocated_storage      = 5
