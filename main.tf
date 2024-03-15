@@ -56,8 +56,8 @@ resource "aws_db_instance" "restaurant-34" {
   engine_version         = "11.17"
   username               = var.db_username
   password               = var.db_password
-  db_subnet_group_name   = aws_db_subnet_group.education.name
-  vpc_security_group_ids = [aws_security_group.rds.id]
+  db_subnet_group_name   = aws_db_subnet_group.subnet_group.name
+  vpc_security_group_ids = [aws_security_group.security_group.id]
   parameter_group_name   = "default.postgres11"
   publicly_accessible    = true
   skip_final_snapshot    = true
