@@ -69,7 +69,7 @@ Antes de começar, você precisa ter os seguintes requisitos:
 
     - `ACCESS_KEY`
     - `SECRET_KEY`
-    - `AMI_KEY_PAIR_NAME`
+    - `LIST_SUBNET`
     - `VPC_ID`
     - `DB_USERNAME`
     - `DB_PASSWORD`
